@@ -494,7 +494,7 @@ Menghapus salah satu item (pasta gigi)
 ![Screenshot (9)](https://user-images.githubusercontent.com/130571422/232325181-cdb59983-b032-468a-adb1-0a11c3bf8599.png)
 ### Test case 3
 Menghapus seluruh daftar belanja
-![Screenshot (9)](https://user-images.githubusercontent.com/130571422/232325181-cdb59983-b032-468a-adb1-0a11c3bf8599.png)
+![Screenshot (10)](https://user-images.githubusercontent.com/130571422/232325218-3c8ba8f6-5746-4a99-8a53-0a16580b6e54.png)
 ### Test case 4
 Menjumlahkan seluruh item yang dibeli setelah diskon
 ![Screenshot (11)](https://user-images.githubusercontent.com/130571422/232325231-3361882e-4a63-445e-bbf8-24c6a6330fb8.png)
