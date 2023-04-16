@@ -39,7 +39,7 @@ Modul utama ditulis dalam `main.py` yang digunakan untuk menjalankan serangakaia
     
 ## Flowchart
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Flowchart Supercashier drawio](https://user-images.githubusercontent.com/130571422/232326147-17dbc02d-361f-4add-a20a-4eef37da13e5.svg)
 
 
 ## Penjelasan Code
