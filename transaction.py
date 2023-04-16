@@ -140,7 +140,7 @@ class Pub_transaction:
         # Menginput kode barang yang akan dihapuskan
         product_code = int(input("Silahkan ketik Kode Produk yang ingin dihapus: "))
         if product_code in self.order.keys():
-            print (f'Anda berhasil menghapus barang {self.order[product_code][0]}')
+            print (f'Anda berhasil menghapus barang {self.order[product_code][1]}')
             self.order.pop(product_code)
             print ("""
                     \n===========================================================================
@@ -307,7 +307,7 @@ class Mem_transaction:
         product_code = int(input("Silahkan ketik Kode Produk yang ingin dihapus: "))
         
         if product_code in self.order.keys():
-            print (f'Anda berhasil menghapus barang {self.order[product_code][0]}')
+            print (f'Anda berhasil menghapus barang {self.order[product_code][1]}')
             self.order.pop(product_code)
             print ("""
                     \n===========================================================================
