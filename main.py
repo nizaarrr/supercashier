@@ -11,6 +11,7 @@ from transaction import *
 # Import seluruh komponen di membership
 from membership import *
 
+
 #Mendefinisikan Transaksi yang dilakukan oleh Member dan Masyarakat Umum
 """
 Fungsi ini mendefinisikan Transaksi yang dilakukan oleh Member terdaftar.
@@ -73,11 +74,11 @@ def Transaksi_member():
             elif menu == 7:
                 print (f"""Terima kasih Member {username} telah berbelanja di Zura Shop.
                 \nGunakan QRIS atau EDC untuk melakukan pembayaran anda.
-                \nID Transaksi Anda adalah {tr}
+                \nID Transaksi Anda adalah {trans_id}
                 \nID Transaksi Anda dibutuhkan ketika melakukan pembayaran.""")
 
                 for id_barang, nama_barang, qty, harga_barang, total_price in transaksi_123.order.values():
-                    penjualan [tr] = [[tr], [username], [[id_barang]], [[nama_barang]], [[qty]], [[harga_barang]], [[total_price]]]
+                    penjualan [trans_id] = [[trans_id], [username], [[id_barang]], [[nama_barang]], [[qty]], [[harga_barang]], [[total_price]]]
                 
                 return penjualan
     except ValueError:
@@ -145,16 +146,15 @@ def Transaksi_umum():
             elif menu == 7:
                 print (f"""Terima kasih telah berbelanja di Zura Shop.
                 \nGunakan QRIS atau EDC untuk melakukan pembayaran anda.
-                \nID Transaksi Anda adalah {tr}
+                \nID Transaksi Anda adalah {trans_id}
                 \nID Transaksi Anda dibutuhkan ketika melakukan pembayaran.""")
 
                 for id_barang, nama_barang, qty, harga_barang, total_price in transaksi_123.order.values():
-                    penjualan [tr] = [[tr], [[id_barang]], [[nama_barang]], [[qty]], [[harga_barang]], [[total_price]]]
+                    penjualan [trans_id] = [[trans_id], [[id_barang]], [[nama_barang]], [[qty]], [[harga_barang]], [[total_price]]]
                     break
                 return penjualan
     except ValueError:
         print ("Inputan anda di luar Menu yang disediakan. Silahkan ulang kembali")
-
 
 
 print("""
@@ -202,7 +202,7 @@ def generate_transaction_id():
 while check_member not in ['y', 'n']:
     print("Silahkan masukkan huruf y atau n")
     check_member = input("Apakah Anda adalah member? (y/n) : ")
-
+trans_id = generate_transaction_id()
 if check_member == "y":
     # Mengisi inputan Username untuk member
     username = input("Silahkan input Username anda: ").lower()
@@ -226,8 +226,7 @@ if check_member == "y":
             Transaksi_member()
         # Jika menginput n maka akan menuju ke menu berikutnya
         elif pendaftaran == 'n':
-            tr = generate_transaction_id()
-            print(f'\n ID Transaksi anda adalah {tr}')
+            print(f'\n ID Transaksi anda adalah {trans_id}')
             print ("Anda akan kembali ke menu berikutnya")
             Transaksi_umum()
                                
@@ -235,5 +234,5 @@ if check_member == "y":
 # Mengecek member jika bukan member dan tidak akan melakukan pendaftaran
 elif check_member =="n": 
     tr = generate_transaction_id()
-    print(f'ID Transaksi anda adalah {tr}')
+    print(f'ID Transaksi anda adalah {trans_id}')
     Transaksi_umum()
