@@ -12,6 +12,14 @@ Terdapat 3 modul yang wajib tersedia dalam Project Super Cashier antara lain:
 #### Modul Transaksi
 Modul `transaction.py` digunakan untuk mempetakan transaksi yang dilakukan oleh customer.
 Modul ini digunakan sebagai dasar barang yang dijual
+Terdapat beberapa menu utama yang diperlukan:
+1. Masukkan barang baru;
+2. Ubah barang di Keranjang;
+3. Hapus salah satu barang di Keranjang;
+4. Kosongkan Keranjang;
+5. Cek barang dalam Keranjang;
+6. Total belanjaan; dan
+7. Keluar.
 
 ``` python
 """
