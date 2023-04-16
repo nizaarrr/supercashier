@@ -233,6 +233,6 @@ if check_member == "y":
 
 # Mengecek member jika bukan member dan tidak akan melakukan pendaftaran
 elif check_member =="n": 
-    tr = generate_transaction_id()
+    trans_id = generate_transaction_id()
     print(f'ID Transaksi anda adalah {trans_id}')
     Transaksi_umum()
