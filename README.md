@@ -480,12 +480,18 @@ Perbedaannya ada pada harga akhir. Untuk member akan mendapatkan potongan tambah
 Test case menggunakan modul Transaksi_umum
 ### Test case 1
 Menambahkan 2 item
+![Screenshot (8)](https://user-images.githubusercontent.com/130571422/232325137-401a0055-1688-49f5-9b4a-59389c80dc09.png)
 ### Test case 2
 Menghapus salah satu item (pasta gigi)
+![Screenshot (9)](https://user-images.githubusercontent.com/130571422/232325181-cdb59983-b032-468a-adb1-0a11c3bf8599.png)
 ### Test case 3
 Menghapus seluruh daftar belanja
+![Screenshot (9)](https://user-images.githubusercontent.com/130571422/232325181-cdb59983-b032-468a-adb1-0a11c3bf8599.png)
 ### Test case 4
 Menjumlahkan seluruh item yang dibeli setelah diskon
+![Screenshot (11)](https://user-images.githubusercontent.com/130571422/232325231-3361882e-4a63-445e-bbf8-24c6a6330fb8.png)
+
+
 ## Conclusion/Future Work
 
 - List barang bisa dikembangkan dengan memanfaatkan barcode reader untuk memudahkan pengguna;
