@@ -72,7 +72,7 @@ class Pub_transaction:
                     \n=============================Daftar Keranjang==============================
                     \n===========================================================================""")
                     table = [value for key, value in self.order.items()]
-                    header = ['ID Barang', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
+                    header = ['Kode Produk', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
                     table_style = "fancy_grid"
                     print(tabulate(table, header, tablefmt=table_style))
 
@@ -92,7 +92,7 @@ class Pub_transaction:
                     \n=============================Daftar Keranjang==============================
                     \n===========================================================================""")
             table = [value for key, value in self.order.items()]
-            header = ['ID Barang', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
+            header = ['Kode Produk', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
             table_style = "fancy_grid"
             print(tabulate(table, header, tablefmt=table_style))
             # Memasukkan kode barang yang akan diubah
@@ -116,7 +116,7 @@ class Pub_transaction:
                     \n=============================Daftar Keranjang==============================
                     \n===========================================================================""")
                 table = [value for key, value in self.order.items()]
-                header = ['ID Barang', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
+                header = ['Kode Produk', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
                 table_style = "fancy_grid"
                 print(tabulate(table, header, tablefmt=table_style))
             
@@ -134,21 +134,21 @@ class Pub_transaction:
                     \n=============================Daftar Keranjang==============================
                     \n===========================================================================""")
         table = [value for key, value in self.order.items()]
-        header = ['ID Barang', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
+        header = ['Kode Produk', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
         table_style = "fancy_grid"
         print(tabulate(table, header, tablefmt=table_style))
         # Menginput kode barang yang akan dihapuskan
         product_code = int(input("Silahkan ketik Kode Produk yang ingin dihapus: "))
         product_code = 102
         if product_code in self.order.keys():
-            print (f'Anda berhasil menghapus barang {self.order[product_code][1]}')
+            print (f'Anda berhasil menghapus barang {self.order[product_code][0]}')
             self.order.pop(product_code)
             print ("""
                     \n===========================================================================
                     \n=============================Daftar Keranjang==============================
                     \n===========================================================================""")
             table = [value for key, value in self.order.items()]
-            header = ['ID Barang', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
+            header = ['Kode Produk', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
             table_style = "fancy_grid"
             print(tabulate(table, header, tablefmt=table_style))
  
@@ -175,7 +175,7 @@ class Pub_transaction:
     def Check_order(self):
         print ("===Daftar Keranjang===")
         table = [value for key, value in self.order.items()]
-        header = ['ID Barang', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
+        header = ['Kode Produk', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
         table_style = "fancy_grid"
         print(tabulate(table, header, tablefmt=table_style))    
     """Modul untuk mengecek Total jumlah belanjaan"""
@@ -244,7 +244,7 @@ class Mem_transaction:
                     \n=============================Daftar Keranjang==============================
                     \n===========================================================================""")
                     table = [value for key, value in self.order.items()]
-                    header = ['ID Barang', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
+                    header = ['Kode Produk', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
                     table_style = "fancy_grid"
                     print(tabulate(table, header, tablefmt=table_style))
             
@@ -262,7 +262,7 @@ class Mem_transaction:
                     \n=============================Daftar Keranjang==============================
                     \n===========================================================================""")
             table = [value for key, value in self.order.items()]
-            header = ['ID Barang', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
+            header = ['Kode Produk', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
             table_style = "fancy_grid"
             print(tabulate(table, header, tablefmt=table_style))
             product_code = int(input("Silahkan ketik Kode Produk dari Jumlah Barang yang ingin diubah: "))
@@ -284,7 +284,7 @@ class Mem_transaction:
                     \n=============================Daftar Keranjang==============================
                     \n===========================================================================""")
                 table = [value for key, value in self.order.items()]
-                header = ['ID Barang', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
+                header = ['Kode Produk', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
                 table_style = "fancy_grid"
                 print(tabulate(table, header, tablefmt=table_style))
             
@@ -301,21 +301,21 @@ class Mem_transaction:
                     \n=============================Daftar Keranjang==============================
                     \n===========================================================================""")
         table = [value for key, value in self.order.items()]
-        header = ['ID Barang', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
+        header = ['Kode Produk', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
         table_style = "fancy_grid"
         print(tabulate(table, header, tablefmt=table_style))
 
         product_code = int(input("Silahkan ketik Kode Produk yang ingin dihapus: "))
         
         if product_code in self.order.keys():
-            print (f'Anda berhasil menghapus barang {self.order[product_code][1]}')
+            print (f'Anda berhasil menghapus barang {self.order[product_code][0]}')
             self.order.pop(product_code)
             print ("""
                     \n===========================================================================
                     \n=============================Daftar Keranjang==============================
                     \n===========================================================================""")
             table = [value for key, value in self.order.items()]
-            header = ['ID Barang', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
+            header = ['Kode Produk', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
             table_style = "fancy_grid"
             print(tabulate(table, header, tablefmt=table_style))
             
@@ -336,7 +336,7 @@ class Mem_transaction:
     def Check_order(self):
         print ("===Daftar Keranjang===")
         table = [value for key, value in self.order.items()]
-        header = ['ID Barang', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
+        header = ['Kode Produk', 'Nama Barang', 'Jumlah Barang', 'Harga Satuan', 'Total Harga']
         table_style = "fancy_grid"
         print(tabulate(table, header, tablefmt=table_style))     
     
