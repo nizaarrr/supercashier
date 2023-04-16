@@ -139,7 +139,6 @@ class Pub_transaction:
         print(tabulate(table, header, tablefmt=table_style))
         # Menginput kode barang yang akan dihapuskan
         product_code = int(input("Silahkan ketik Kode Produk yang ingin dihapus: "))
-        product_code = 102
         if product_code in self.order.keys():
             print (f'Anda berhasil menghapus barang {self.order[product_code][0]}')
             self.order.pop(product_code)
